@@ -1,0 +1,647 @@
+@import "colors"
+@import "fonts"
+@import "mixins"
+
+header
+	height: 1001px
+	position: relative
+
+.header-wrapper
+	position: absolute
+	width: 100%
+	height: 1001px
+	z-index: -2
+
+.logo
+	margin-top: 47px
+	a
+		@include custom-title ($Avenir, 36px, 700, $white)
+		text-transform: uppercase
+		letter-spacing: 1px
+
+nav
+	margin-top: 53px
+	ul
+		text-align: right
+		li
+			display: inline-block
+			&:nth-of-type(n+2)
+				margin-left: 50px
+			a
+				@include nav-menu
+
+.cube-wrapper
+	position: fixed
+	top: 140px
+	width: 1140px
+	img
+		margin: 0 200px 0 auto
+		max-width: 100%
+
+.header-title
+	margin-top: 189px
+	position: relative
+	h1
+		max-width: 420px
+		margin: 0 118px 60px auto
+		position: relative
+		z-index: 5
+		@include custom-title ($Avenir, 64px, 700, $white)
+		span
+			font-family: $Avenir-reg
+			font-weight: 400
+	button
+		@include button ($white, 0 2px 25px rgba(0, 0, 0, 0.2))
+		@include custom-title ($Avenir-reg, 24px, 700, $header-btn)
+		display: block
+		position: relative
+		padding-left: 38px
+		margin-left: auto
+		margin-right: 330px
+		b
+			position: absolute
+			top: 0
+			font-size: 42px
+			right: 70px
+			animation: anim-btn 2s infinite
+			animation-timing-function: easy-in-out
+			&:nth-of-type(2)
+				right: 60px
+				animation: anim-btn 2s 0.5s infinite
+				animation-timing-function: easy-in-out
+			&:nth-of-type(3)
+				animation: anim-btn 2s 1s infinite
+				animation-timing-function: easy-in-out
+				right: 50px
+		span
+			position: absolute
+			top: 22px
+			right: 30px
+			width: 14px
+			height: 24px
+			background: url(../../img/more.png)
+			animation: anim-btn 2s 1.5s infinite
+			animation-timing-function: easy-in-out
+		&:hover
+			box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1)
+
+@keyframes anim-btn
+	from
+		opacity: 1
+	to
+		opacity: 0
+
+.design
+	margin-top: 50px
+	&-title
+		text-align: center
+		margin-bottom: 120px
+		h2
+			@include title
+	&-illustration
+		width: 290px
+		height: 385px
+		padding-top: 27px
+		padding-left: 17px
+		margin-bottom: 50px
+		box-shadow: 0 2px 50px rgba(0, 0, 0, 0.15)
+		border-radius: 30px 0
+		background-color: $white
+		position: relative
+		z-index: 2
+		.paint-message
+			margin-top: -50px
+			margin-bottom: 25px
+	.palette
+		position: absolute
+		z-index: 1
+		top: 100px
+		left: -110px
+	&-text
+		&_description
+			max-width: 210px
+			display: inline-block
+			margin-bottom: 80px
+			h4
+				@include sub-title
+				margin-bottom: 20px
+			p
+				@include text
+				line-height: 24px
+			&:nth-of-type(even)
+				margin-left: 50px
+
+.development
+	margin-top: 100px
+	margin-bottom: 70px
+	&-title
+		text-align: center
+		margin-bottom: 160px
+		h2
+			@include title
+	&-description
+		max-width: 210px
+		display: inline-block
+		margin-bottom: 80px
+		h4
+			@include sub-title
+			margin-bottom: 20px
+		p
+			@include text
+			line-height: 24px
+		&:nth-of-type(even)
+			margin-left: 50px
+	&-image
+		position: relative
+		img
+			&:nth-of-type(2)
+				position: absolute
+				top: 70px
+				right: 70px
+	
+.projects
+	padding-top: 100px
+	position: relative
+	.bg-image
+		position: absolute
+		top: 0
+		max-width: 100%
+	&-title
+		text-align: center
+		margin-bottom: 100px
+		h3
+			@include title
+	&-slider
+		max-width: 920px
+		margin: 0 auto
+		.slide
+			img
+				margin: 0 auto
+				max-width: 700px
+				max-height: 480px
+		.slick-arrow-left
+			max-width: 20px
+			position: absolute
+			left: 0
+			z-index: 5
+			top: calc(100% - 57%)
+			transform: rotate(180deg)
+			cursor: pointer
+		.slick-arrow-right
+			max-width: 20px
+			position: absolute
+			right: 0
+			z-index: 5
+			top: calc(100% - 57%)
+			cursor: pointer
+
+.featurs
+	margin-top: 40px
+	margin-bottom: 80px
+	padding-top: 100px
+	&-title
+		margin-top: 103px
+		small
+			@include custom-title ($Avenir-reg, 24px, 400, $small-color)
+		h3
+			@include title
+			margin: 10px 0 25px
+		p
+			@include text
+			max-width: 416px
+			font-size: 18px
+			line-height: 1.5
+	&-description
+		max-width: 280px
+		display: inline-block
+		margin-bottom: 32px
+		img
+			float: left
+			margin: 7px 30px 80px 0
+		h6
+			@include custom-title ($Avenir-reg, 20px, 400, $titles-color)
+			margin-bottom: 16px
+		p
+			@include text
+			font-size: 18px
+			line-height: 1.2
+		&:nth-of-type(even)
+			margin-left: 70px
+
+.message
+	height: 1003px
+	position: relative
+	img
+		width: 100%
+		height: 1003px
+		position: absolute
+		z-index: -5
+	&-content
+		margin-top: 100px
+		&_title
+			margin-top: 150px
+			margin-bottom: 100px
+			text-align: center
+			h3
+				@include title
+				color: $white
+		textarea
+			margin-top: -8px
+			@include inputs
+			border-bottom: none
+			padding-bottom: 0
+			height: 200px
+			background: url(../../img/lines.png) no-repeat bottom
+			line-height: 2.6
+			overflow: hidden
+		
+.form-contacts
+	margin-left: 50px
+	input
+		@include inputs
+		margin-bottom: 45px
+
+.send-btn
+	margin-top: 120px
+	text-align: center
+	button
+		@include button($header-btn, 0 2px 25px rgba(0, 0, 0, 0.2))
+		@include custom-title ($Avenir-reg, 24px, 700, $white)
+		text-align: left
+		position: relative
+		padding-left: 38px
+		cursor: pointer
+		transition: 0.5s
+		b
+			position: absolute
+			top: 0px
+			font-size: 42px
+			right: 70px
+			animation: anim-btn 2s infinite
+			animation-timing-function: easy-in-out
+			&:nth-of-type(2)
+				right: 60px
+				animation: anim-btn 2s 0.5s infinite
+				animation-timing-function: easy-in-out
+			&:nth-of-type(3)
+				animation: anim-btn 2s 1s infinite
+				animation-timing-function: easy-in-out
+				right: 50px
+		span
+			position: absolute
+			top: 22px
+			right: 30px
+			width: 14px
+			height: 24px
+			background: url(../../img/more-white.png)
+			animation: anim-btn 2s 1.5s infinite
+			animation-timing-function: easy-in-out
+		&:hover
+			background-color: $white
+			color: $header-btn
+			span
+				background: url(../../img/more.png)
+		
+
+.bubbles-wrapper
+	margin-top: -50px
+	width: 100%
+	min-height: 850px
+	background-color: transparent
+
+.team
+	margin-top: 20px
+	padding-top: 100px
+	&-peoples
+		width: 482px
+		height: 408px
+		box-shadow: 0 2px 50px rgba(0, 0, 0, 0.15)
+		border-radius: 30px 0
+		position: relative
+		&_header
+			width: 100%
+			height: 105px
+			background-image: linear-gradient(to top, #84baff 0%, #aed1fe 100%)
+			border-radius: 30px 0 0
+			margin-bottom: 25px
+			padding: 17px 0 0 26px
+			.photo
+				width: 71px
+				height: 71px
+				border-radius: 50%
+				margin-right: 22px
+				float: left
+				background-color: $white
+				position: relative
+				img
+					object-fit: cover
+					width: 100%
+					height: 100%
+					border-radius: 50%
+					position: absolute
+			p
+				@include sub-title
+				color: $white
+				margin: 10px 0 5px
+			small
+				@include text
+				color: $white
+				font-size: 18px
+		&_description
+			margin-left: 33px
+			max-width: 330px
+			p
+				@include text
+				max-width: 416px
+				font-size: 18px
+				color: $titles-color
+				line-height: 1.2
+	&-title
+		margin-top: 90px
+		text-align: right
+		span
+			@include custom-title ($Avenir-reg, 24px, 400, $small-color)
+		h4
+			@include title
+			margin: 20px 0
+		p
+			@include text
+			margin-left: auto
+			max-width: 413px
+			font-size: 18px
+			line-height: 1.3
+
+.team-peoples_slider
+	width: 256px
+	height: 346px
+	box-shadow: 0 2px 80px rgba(0, 0, 0, 0.1), 0 -2px 40px rgba(0, 0, 0, 0.1)
+	border-radius: 30px 0
+	background-color: $white
+	padding: 32px 0 0 17px
+	position: absolute
+	top: 31px
+	right: 0
+	transition: 0.3s
+	z-index: 10
+	&:hover
+		transform: scale(1.1) !important
+	.slide
+		margin-left: 5px
+
+.people-position
+	margin-bottom: 20px
+	cursor: pointer
+	.photo
+		@include slider-photo
+		box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75)
+		img
+			object-fit: cover
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			position: absolute
+	p
+		@include custom-title ($Avenir, 18px, 400, $titles-color)
+		padding: 5px 0
+	small
+		@include text
+
+.partners
+	margin-top: 80px
+	padding-top: 170px
+	&-title
+		span
+			@include custom-title ($Avenir-reg, 24px, 400, $small-color)
+		h4
+			@include title
+			margin: 20px 0
+		p
+			@include text
+			max-width: 413px
+			font-size: 18px
+			line-height: 1.3
+	&-images
+		img
+			display: inline-block
+			&:nth-of-type(even)
+				margin-left: 23px
+
+.reviews
+	margin: 175px 0 80px
+	.message-wrap
+		content: ''
+		width: 168px
+		height: 130px
+		position: absolute
+		z-index: -1
+		bottom: 20px
+		left: -20px
+		background: url(../../img/chat-before.png)
+	&-chat
+		width: 346px
+		height: 459px
+		box-shadow: 0 2px 50px rgba(0, 0, 0, 0.15)
+		border-radius: 30px 0
+		background-color: $white
+		margin: 0 auto
+		position: relative
+		&:after
+			content: ''
+			width: 168px
+			height: 130px
+			position: absolute
+			z-index: -1
+			top: 170px
+			left: -190px
+			background: url(../../img/chat-after.png)
+		span
+			@include text
+			font-size: 14px
+			color: $titles-color
+		&_header
+			width: 100%
+			height: 93px
+			border-radius: 30px 0 0
+			background-image: linear-gradient(180deg, #f4c33a 0%, #e9b115 100%)
+			padding: 15px 0 0 24px
+			margin-bottom: 35px
+			.photo
+				width: 64px
+				height: 64px
+				margin-right: 25px
+				float: left
+				border-radius: 50%
+				background-color: $white
+				position: relative
+				img
+					object-fit: cover
+					width: 100%
+					height: 100%
+					border-radius: 50%
+					position: absolute
+			p
+				@include sub-title
+				margin: 10px 0 5px
+				color: $white
+			small
+				@include text
+				font-size: 14px
+				color: $white
+	&-title
+		margin-top: 120px
+		text-align: right
+		span
+			@include custom-title ($Avenir-reg, 24px, 400, $small-color)
+		h3
+			@include title
+			margin: 10px 0 20px
+		p
+			@include text
+			font-size: 18px
+			max-width: 416px
+			margin-left: auto
+
+.company-photo
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	float: left
+	margin: 0 16px 0 34px
+	background-color: $titles-color
+	position: relative
+	img
+		object-fit: cover
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		position: absolute
+
+.company-message
+	width: 231px
+	height: 103px
+	border-radius: 0 20px 20px
+	background-color: $chat-company
+	margin: 10px 25px 21px auto
+	padding-top: 10px
+	p
+		@include text
+		max-width: 170px
+		margin: 0 auto
+
+.client-message
+	width: 312px
+	height: 103px
+	box-shadow: 0 2px 50px rgba(0, 0, 0, 0.2)
+	border-radius: 20px 0 20px 20px
+	background-color: $chat-client
+	margin-left: auto
+	margin-right: -20px
+	padding: 12px 0 0 26px
+	position: relative
+	p
+		@include text
+		max-width: 250px
+		color: $white
+		line-height: 1.2
+
+.client-photo
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	background-color: $titles-color
+	position: absolute
+	bottom: 150px
+	right: -80px
+	img
+		object-fit: cover
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		position: absolute
+
+.footer-wrapper
+	width: 100%
+	height: 754px
+	top: 0
+	position: absolute
+	z-index: -2
+
+footer
+	position: relative
+	height: 754px
+
+.cube-footer
+	position: absolute
+	top: 100px
+	width: 1140px
+	img
+		margin-left: 200px
+		max-width: 100%
+
+.footer
+	padding-top: 340px
+	&-search
+		h5
+			@include title
+			color: $white
+			margin-bottom: 35px
+		input
+			width: 476px
+			height: 76px
+			border-radius: 4px
+			background-color: $white
+			padding-left: 30px
+			@include text
+			font-size: 24px
+			display: block
+			float: left
+		button
+			width: 66px
+			height: 76px
+			border-radius: 0 4px 4px 0
+			background: $black url(../../img/send.png) no-repeat center center
+			margin-left: -5px
+	&-nav
+		margin-top: 165px
+		text-align: center
+		li
+			display: inline-block
+			@include nav-menu
+			&:nth-of-type(n+2)
+				margin-left: 40px
+
+.mob-menu, .mob, .menu-list
+	display: none
+
+.partners-slider
+	display: none
+
+
+
+
+@font-face
+	font-family: 'Avenir-Medium'
+	src: url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot')
+	src: url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff') format('woff'),
+	url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'Avenir-Regular'
+	src: url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot')
+	src: url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff') format('woff'),
+	url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'Avenir-Bold'
+	src: url('../../fonts/Avenir-bold/Avenir-Bold.eot')
+	src: url('../../fonts/Avenir-bold/Avenir-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/Avenir-bold/Avenir-Bold.woff') format('woff'),
+	url('../../fonts/Avenir-bold/Avenir-Bold.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal

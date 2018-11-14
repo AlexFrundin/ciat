@@ -1,0 +1,694 @@
+@import "colors"
+@import "fonts"
+@import "mixins"
+
+@media (max-width: 1650px)
+	.design
+		&-illustration
+			margin: 0 auto
+		.palette
+			left: 0
+
+@media (max-width: 1320px)
+	.reviews
+		&-chat
+			margin: 0 0 0 auto
+
+@media (max-width: 1199px)
+	.header-wrapper
+		height: 800px
+
+	header
+		height: 800px
+
+	.cube-wrapper
+		width: 960px
+		img
+			margin: 0 120px 0 auto
+
+	nav
+		ul
+			text-align: left
+			li
+				&:nth-of-type(n+2)
+					margin-left: 30px
+
+	.design
+		&-text
+			&_description
+				&:nth-of-type(even)
+					margin-left: 30px
+		&-illustration
+			width: 203px
+			height: 269px
+			padding: 19px 0 0 12px
+			margin: 50px auto 0
+			img
+				&:nth-of-type(1)
+					max-width: 180px
+				&:nth-of-type(3)
+					max-width: 180px
+			.paint-message
+				max-width: 250px
+				margin-top: -30px
+				margin-bottom: 10px
+		.palette
+			width: 161px
+			top: 100px
+			left: 10px
+
+	.development-image
+		img
+			max-width: 100%
+			&:nth-of-type(2)
+				max-width: 65%
+				right: 50px
+
+	.featurs
+		&-description
+			&:nth-of-type(even)
+				margin-left: 30px
+
+	.message
+		height: 1100px
+		&-content
+			textarea
+				margin-left: 50px
+			&_title
+				margin-top: 100px
+		img
+			height: 1100px
+
+	.team
+		&-peoples
+			&_description
+				p
+					max-width: 240px
+
+	.reviews
+		&-chat
+			margin: 0 50px 0 auto
+			&:after
+				left: -120px
+		.message-wrap
+			left: -50px
+
+	.footer-wrapper
+		height: 650px
+
+	footer
+		height: 650px
+
+	.cube-footer
+		top: 0px
+		width: 960px
+		img
+			margin-left: 50px
+			max-width: 100%
+
+	.footer
+		padding-top: 270px
+		&-search
+			max-width: 550px
+			margin-left: auto
+
+@media (max-width: 991px)
+	.mob-menu
+		display: block
+		width: 40px
+		margin: 28px 0 0 auto
+
+	.burger
+		width: 35px
+		height: 3px
+		background-color: $white
+		margin-bottom: 8px
+
+	.menu-list
+		display: block
+		position: fixed
+		top: 0
+		right: 0
+		z-index: 999
+		width: 40%
+		height: 100vh
+		background-color: $white
+		transition: 0.5s
+		transform: translateX(100%);
+		.close
+			display: none
+		&_nav
+			display: flex
+			justify-content: space-around
+			align-items: center
+			flex-direction: column
+			height: 60%
+			margin-top: 30px
+			a
+				@include custom-title ($Avenir-reg, 24px, 400, $header-btn)
+
+	.menu-active
+		transform: translateX(0%)
+
+	nav
+		display: none
+
+	.logo
+		margin-top: 25px
+
+	.header-wrapper, header
+		height: 690px
+
+	.cube-wrapper
+		width: 720px
+		top: 60px
+		img
+			margin: 0 120px 0 auto
+
+	.header
+		&-title
+			margin-top: 140px
+			h1
+				margin: 0 0 60px auto
+				font-size: 48px
+			button
+				width: 193px
+				height: 59px
+				font-size: 20px
+				margin: 0 230px 0 auto
+				b
+					top: -1px
+				span
+					top: 20px
+
+	.design
+		&-illustration
+			width: 203px
+			height: 269px
+			padding: 19px 0 0 12px
+			margin: 0 auto
+			img
+				&:nth-of-type(1)
+					max-width: 180px
+				&:nth-of-type(3)
+					max-width: 180px
+			.paint-message
+				max-width: 250px
+				margin-top: -30px
+				margin-bottom: 10px
+		.palette
+			width: 161px
+			top: 50px
+			left: 180px
+		&-text
+			margin-top: 80px
+			margin-left: 80px
+			&_description
+				&:nth-of-type(even)
+					margin-left: 90px
+
+	.development
+		margin: 50px 0 0
+		&-title
+			margin-bottom: 100px
+			h2
+				font-size: 36px
+		&-image
+			margin-bottom: 80px
+			img
+				max-width: 345px
+				margin: 0 auto
+				&:nth-of-type(2)
+					max-width: 220px
+					right: 200px
+		&-description
+			&:nth-of-type(even)
+				margin-left: 90px
+			&:nth-of-type(odd)
+				margin-left: 60px
+
+	.projects
+		margin-bottom: 0
+		&-title
+			h3
+				font-size: 36px
+		&-slider
+			.slide
+				img
+					max-width: 550px
+					max-height: 380px
+		.bg-image
+			top: calc(10%)
+
+	.featurs
+		&-title
+			margin-bottom: 80px
+			small
+				font-size: 20px
+			h3
+				font-size: 36px
+
+	.message
+		&-content
+			&_title
+				h3
+					font-size: 36px
+			textarea
+				max-width: 450px
+				font-size: 18px
+		img
+			height: 1067px
+
+	.form-contacts
+		max-width: 450px
+		input
+			width: 100%
+			font-size: 18px
+
+	.team
+		margin-top: 0
+		padding-top: 0
+		&-title
+			margin-bottom: 80px
+			span
+				font-size: 20px
+			h4
+				font-size: 36px
+			p
+				max-width: 100%
+		&-peoples
+			width: 400px
+			&_description
+				p
+					max-width: 250px
+			&_slider
+				right: 160px
+
+	.partners
+		margin-top: 45px
+		padding-top: 100px
+		&-title
+			margin-bottom: 72px
+			span
+				font-size: 20px
+			h4
+				font-size: 36px
+			p
+				max-width: 100%
+
+	.reviews
+		&-title
+			margin-top: 0
+			margin-bottom: 72px
+			span
+				font-size: 20px
+			h3
+				font-size: 36px
+			p
+				max-width: 100%
+		&-chat
+			&:after
+				left: -180px
+		.message-wrap
+			left: 180px
+
+	.cube-footer
+		top: 0px
+		width: 690px
+		img
+			margin-left: 20px
+			max-width: 100%
+
+	.footer-nav
+		display: none
+
+
+	.footer
+		&-search
+			margin-top: 60px
+
+@media (max-width: 767px)
+	.design
+		&-text
+			margin-left: 20px
+			&_description
+				&:nth-of-type(even)
+					margin-left: 60px
+		.palette
+			left: 70px
+
+	.header
+		&-title
+			h1
+				width: 320px
+			button
+				margin-right: 120px
+
+	.cube-wrapper
+		width: 540px
+		img
+			margin: 0 120px 0 auto
+
+	.development
+		margin: 0
+		&-description
+			&:nth-of-type(odd)
+				margin-left: 20px
+			&:nth-of-type(even)
+				margin-left: 60px
+		&-image
+			img
+				&:nth-of-type(2)
+					top: 80px
+					right: 120px
+
+	.projects
+		padding-top: 50px
+		&-slider
+			.slide
+				img
+					max-width: 480px
+					max-height: 280px
+
+	.slide
+		img
+			max-width: 100%
+
+	.featurs
+		&-description
+			margin: 0 auto 40px
+			display: block
+			&:nth-of-type(even)
+				margin: 0 auto 40px
+
+	.team
+		&-title
+			margin-top: 40px
+		&-peoples
+			&_slider
+				right: -10px
+			&_description
+				p
+					max-width: 240px
+
+	.partners
+		margin-top: 0
+		padding-top: 70px
+		&-images
+			img
+				margin: 0 auto 20px
+				display: block
+				&:nth-of-type(even)
+					margin: 0 auto 20px
+
+	.reviews
+		margin-top: 80px
+		.message-wrap
+			left: 0px
+
+	.cube-footer
+		top: 0px
+		width: 540px
+		img
+			margin-left: 20px
+			max-width: 100%
+
+	.footer
+		&-search
+			input
+				width: 400px
+
+@media (max-width: 575px)
+	.team
+		&-peoples
+			margin: 0 auto
+			width: 272px
+			&_slider
+				display: none
+			&_description
+				padding: 15px
+				margin-left: 10px
+
+	.menu-list
+		width: 100%
+		.close
+			display: block
+			position: absolute
+			top: 15px
+			right: 25px
+
+	.mob
+		display: block
+
+	.desctop
+		display: none
+
+	.header-mobile
+		width: 100%
+		height: 428px
+		position: absolute
+
+	.header-wrapper, header
+		height: 428px
+
+	.header
+		&-title
+			margin-top: 60px
+			h1
+				width: 209px
+				font-size: 32px
+				margin-right: 5px
+			button
+				display: none
+
+	.cube-wrapper
+		top: 40px
+		width: 90%
+		img
+			margin: 0 120px 0 auto
+
+	.design
+		&-title
+			margin-bottom: 60px
+			h2
+				font-size: 32px
+		&-text
+			&_description
+				display: block
+				margin: 0 auto 32px
+				&:nth-of-type(even)
+					margin: 0 auto 32px
+		&-illustration
+			width: 160px
+			height: 212px
+			padding-left: 10px
+			img
+				&:nth-of-type(1)
+					max-width: 142px
+				&:nth-of-type(3)
+					max-width: 142px
+			.paint-message
+				max-width: 200px
+				margin-bottom: 5px
+		.palette
+			max-width: 127px
+			left: 20%
+
+	.slide
+		img
+			max-height: 220px
+
+	.development
+		&-title
+			h2
+				font-size: 32px
+		&-image
+			img
+				max-width: 100%
+				&:nth-of-type(2)
+					max-width: 320px
+					top: 80px
+					right: 50px
+		&-description
+			display: block
+			margin: 0 auto 32px
+			&:nth-of-type(odd)
+				margin: 0 auto 32px
+			&:nth-of-type(even)
+				margin: 0 auto 32px
+
+	.projects
+		min-height: 0
+		background-image: none!important
+		&-title
+			margin-bottom: 50px
+			h3
+				font-size: 32px
+		&-slider
+			.slick-dots
+				bottom: -50px
+			.slide
+				img
+					max-width: 80%
+					max-height: 220px
+
+	.featurs
+		margin-bottom: 40px
+		&-title
+			margin-top: 80px
+
+	.message
+		height: 1000px
+		img
+			height: 980px
+		&-content
+			margin-top: 120px
+			&_title
+				margin: 60px 0
+				h3
+					font-size: 32px
+			textarea
+				margin-left: 0
+				width: 100%
+
+	.send-btn
+		margin-top: 60px
+
+	.form-contacts
+		margin-left: 0
+
+	.team
+		margin-top: 45px
+		&-title
+			margin-top: 0
+		&-peoples
+			position: relative
+			&_header
+				padding: 17px 0 0 10px
+				margin-bottom: 0
+				.photo
+					margin-right: 10px
+				p
+					font-size: 22px
+			&_description
+				p
+					max-height: 260px
+					overflow: hidden
+			#prev
+				position: absolute
+				bottom: 20px
+				left: 80px
+			#next
+				position: absolute
+				bottom: 20px
+				right: 80px
+
+	.partners
+		margin-top: 70px
+
+	.partners-slider
+		display: block
+		img
+			margin: 0 auto
+
+	.partners-images
+		display: none
+
+	.reviews
+		margin-top: 90px
+		&-chat
+			width: 223px
+			height: 362px
+			margin: 0 auto
+			&:after
+				display: none
+			&_header
+				margin-bottom: 10px
+			.company-photo
+				width: 26px
+				height: 26px
+				margin-left: 22px
+		.message-wrap
+			display: none
+
+	.company-message
+		width: 148px
+		height: 122px
+		overflow: hidden
+		padding: 0 10px
+
+	.client-message
+		width: 201px
+		height: 67px
+		overflow: hidden
+		padding: 7px 10px
+
+	.client-photo
+		width: 26px
+		height: 26px
+		bottom: 80px
+		right: -60px
+
+	.footer-wrapper, footer
+		height: 589px
+
+	.footer-parallax
+		min-height: 480px
+
+	.footer
+		&-search
+			h5
+				font-size: 32px
+			input
+				width: 241px
+				height: 62px
+			button
+				width: 52px
+				height: 62px
+
+	.cube-footer
+		display: none
+
+@media (max-width: 481px)
+	.design
+		.palette
+			max-width: 127px
+			left: 10%
+
+	.development
+		&-image
+			img
+				max-width: 100%
+				&:nth-of-type(2)
+					max-width: 180px
+					top: 100px
+					right: 40px
+
+@media (max-width: 360px)
+	.design
+		.palette
+			max-width: 127px
+			left: 20px
+
+	.reviews
+		&-chat
+			margin: 0 0 0 20px
+
+
+@font-face
+	font-family: 'Avenir-Medium'
+	src: url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot')
+	src: url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.woff') format('woff'),
+	url('../../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'Avenir-Regular'
+	src: url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot')
+	src: url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.woff') format('woff'),
+	url('../../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal

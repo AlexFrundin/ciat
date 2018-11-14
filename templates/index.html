@@ -1,0 +1,488 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>CIAT</title>
+		<!-- Reset browser styles -->
+		<link href="{% static 'assets/css/custom-reset.css' %}" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="{% static 'assets/css/bootstrap-grid.min.css' %}" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="{% static 'assets/css/sass/main.css' %}" rel="stylesheet">
+		<link href="{% static 'assets/css/sass/media.css' %}" rel="stylesheet">
+		<!-- Animate -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- Slider -->
+		<link href="{% static 'assets/libs/slick/slick.css' %}" rel="stylesheet">
+		<link href="{% static 'assets/libs/slick/slick-theme.css' %}" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+				<img src="{% static 'assets/img/header-wrapper.png' %}" alt="header" class="header-wrapper desctop">
+				<img src="{% static 'assets/img/header-mobile.png' %}" alt="header" class="header-mobile mob">
+				<div class="container">
+					<div class="row">
+						<div class="col-2">
+							<div class="logo">
+								<a href="#">CIAT</a>
+							</div>
+						</div><!-- /.col-2 -->
+						<div class="col-10">
+							<nav>
+								<ul>
+									<li><a href="#design">Design</a></li>
+									<li><a href="#pr-dev">Project dev</a></li>
+									<li><a href="#projects">Latest projects</a></li>
+									<li><a href="#features">Features</a></li>
+									<li><a href="#team">Team</a></li>
+									<li><a href="#partners">Partners</a></li>
+								</ul>
+							</nav>
+							<div class="mob-menu">
+								<div class="burger"></div>
+								<div class="burger"></div>
+								<div class="burger"></div>
+							</div><!-- /.mob-menu -->
+							<div class="menu-list">
+								<img src="{% static 'assets/img/close.png' %}" alt="close" class="close">
+								<div class="menu-list_nav">
+									<a href="#design">Design</a>
+									<a href="#pr-dev">Project dev</a>
+									<a href="#projects">Latest projects</a>
+									<a href="#features">Features</a>
+									<a href="#team">Team</a>
+									<a href="#partners">Partners</a>
+								</div><!-- /.menu-list_nav -->
+							</div><!-- /.menu-list -->
+						</div><!-- /.col-10 -->
+					</div><!-- /.row -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="cube-wrapper">
+								<img src="{% static 'assets/img/new-header.png' %}" alt="cubs" class="header-cubs">
+							</div><!-- /.cube-wrapper -->
+							<div class="header-title">
+								<h1><span>Powerful</span> Web Studio</h1>
+								<button>More <b>.</b> <b>.</b> <b>.</b> <span></span></button>
+							</div><!-- /.header-title -->
+						</div><!-- /.col-md-12 -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+		</header>
+		<div class="container">
+			<section class="design" id="design">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="design-title">
+							<h2>Design</h2>
+						</div>
+					</div><!-- /.col-md-12 -->
+				</div>
+				<div class="row">
+					<div class="col-xl-6 col-lg-5">
+						<img src="{% static 'assets/img/palette.png' %}" alt="palette" class="palette" data-aos="fade-in"  data-aos-delay="700">
+						<div class="design-illustration" data-aos="fade-up">
+							<img src="{% static 'assets/img/text.png' %}" alt="message" data-aos="fade-in"  data-aos-delay="1100">
+							<img src="{% static 'assets/img/message.png' %}" alt="paint message" class="paint-message" data-aos="fade-in"  data-aos-delay="1600">
+							<img src="{% static 'assets/img/stub.png' %}" alt="stub" data-aos="fade-in"  data-aos-delay="1600">
+						</div><!-- /.design-illustration -->
+					</div><!-- /.col-md-6 -->
+					<div class="col-xl-6 col-lg-7">
+						<div class="design-text">
+							<div class="design-text_description">
+								<h4>Design interface</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+							</div><!-- /.design-text_description -->
+							<div class="design-text_description">
+								<h4>Illustrations</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+							</div><!-- /.design-text_description -->
+							<div class="design-text_description">
+								<h4>Logo design</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+							</div><!-- /.design-text_description -->
+							<div class="design-text_description">
+								<h4>Web design</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+							</div><!-- /.design-text_description -->
+						</div>
+					</div><!-- /.col-md-6 -->
+				</div><!-- /.row -->
+			</section>
+			<section class="development" id="pr-dev">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="development-title">
+							<h2>Project development</h2>
+						</div>
+					</div>
+				</div><!-- /.row -->
+				<div class="row">
+					<div class="col-xl-6 col-lg-7 order-2 order-lg-1">
+						<div class="development-description">
+							<h4>App dev</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+						</div><!-- /.development-description -->
+						<div class="development-description">
+							<h4>Design interface</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+						</div><!-- /.development-description -->
+						<div class="development-description">
+							<h4>Design interface</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+						</div><!-- /.development-description -->
+						<div class="development-description">
+							<h4>Design interface</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+						</div><!-- /.development-description -->
+					</div><!-- /.col-md-6 -->
+					<div class="col-xl-6 col-lg-5 orde-1 order-lg-2">
+						<div class="development-image">
+							<img src="{% static 'assets/img/dev.png' %}" alt="development" data-aos="fade-up">
+							<img src="{% static 'assets/img/dev-result.png' %}" alt="result" data-aos="fade-in" data-aos-delay="800">
+						</div>
+					</div><!-- /.col-md-6 -->
+				</div>
+			</section>
+			<section class="projects" id="projects">
+				<img src="{% static 'assets/img/cube-paralax-footer.png' %}" alt="cubs" class="bg-image">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="projects-title">
+							<h3>Latest projects</h3>
+						</div>
+					</div><!-- /.col-md-12 -->
+				</div><!-- /.row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="projects-slider">
+							<div class="direction-blocks">
+								<div class="slide">
+									<img src="{% static 'assets/img/action.gif' %}" alt="phone with project">
+								</div><!-- /.slide -->
+								<div class="slide">
+									<img src="{% static 'assets/img/crypto.gif' %}" alt="phone with project">
+								</div><!-- /.slide -->
+								<div class="slide">
+									<img src="{% static 'assets/img/pick2me.gif' %}" alt="phone with project">
+								</div><!-- /.slide -->
+							</div><!-- /.direction-blocks -->
+						</div><!-- /.projects-slider -->
+					</div><!-- /.col-md-12 -->
+				</div><!-- /.row -->
+			</section>
+			<section class="featurs" id="features">
+				<div class="row">
+					<div class="col-xl-5 col-lg-4">
+						<div class="featurs-title">
+							<small>What we do best</small>
+							<h3>Features.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+						</div><!-- /.featurs-title -->
+					</div><!-- /.col-md-5 -->
+					<div class="col-xl-7 col-lg-8">
+						<div class="featurs-description" data-aos="fade-up">
+							<img src="{% static 'assets/img/convenience.png' %}" alt="web page">
+							<h6>Сonvenience</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum.</p>
+						</div><!-- /.featurs-description -->
+						<div class="featurs-description" data-aos="fade-up">
+							<img src="{% static 'assets/img/training.png' %}" alt="vide, photo, message">
+							<h6>Training</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum.</p>
+						</div><!-- /.featurs-description -->
+						<div class="featurs-description" data-aos="fade-up">
+							<img src="{% static 'assets/img/timing.png' %}" alt="check calendar" >
+							<h6>Timing</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum.</p>
+						</div><!-- /.featurs-description -->
+						<div class="featurs-description" data-aos="fade-up">
+							<img src="{% static 'assets/img/laconism.png' %}" alt="gear wheel" >
+							<h6>Laconism</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum.</p>
+						</div><!-- /.featurs-description -->
+						<div class="featurs-description" data-aos="fade-up">
+							<img src="{% static 'assets/img/responsive.png' %}" alt="Responsive displays" >
+							<h6>Responsive</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum.</p>
+						</div><!-- /.featurs-description -->
+						<div class="featurs-description" data-aos="fade-up">
+							<img src="{% static 'assets/img/techsupport.png' %}" alt="speaking peoples" >
+							<h6>Responsive</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum.</p>
+						</div><!-- /.featurs-description -->
+					</div><!-- /.col-md-7 -->
+				</div><!-- /.row -->
+			</section>
+		</div><!-- /.container -->
+		<section class="message">
+			<img src="{% static 'assets/img/black-wrapper.png' %}" alt="black">
+				<div class="container">
+					<div class="message-content">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="message-content_title">
+									<h3>Send a message</h3>
+								</div>
+							</div><!-- /.col-md-12 -->
+						</div><!-- /.row -->
+						<form action="">
+							<div class="row">
+								<div class="col-xl-6">
+									<div class="form-contacts">
+										<input type="text" placeholder="Name" required>
+										<input type="tel" placeholder="Phone" required>
+										<input type="email" placeholder="Email" required>
+									</div><!-- /.form-contacts -->
+								</div><!-- /.col-xl-6 -->
+								<div class="col-xl-6">
+									<textarea name="" cols="30" rows="4" placeholder="Tell us about your idea" maxlength="185"></textarea>
+								</div><!-- /.col-xl-6 -->
+							</div><!-- /.row -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="send-btn">
+										<button>Send <b>.</b> <b>.</b> <b>.</b> <span></span></button>
+									</div><!-- /.send-btn -->
+								</div><!-- /.col-md-12 -->
+							</div><!-- /.row -->
+						</form>
+					</div><!-- /.message-content -->
+				</div><!-- /.container -->
+		</section>
+		<div class="container">
+			<section class="team" id="team">
+				<div class="row">
+					<div class="col-lg-7 order-2 order-lg-1">
+						<div class="team-peoples" data-aos="fade-up">
+							<div class="team-peoples_header">
+								<div class="photo">
+									<img src="{% static 'assets/img/people1.png' %}" alt="user photo">
+								</div>
+								<p id="name">John Doe</p>
+								<small id="position">Project Manager</small>
+							</div>
+							<div class="team-peoples_description">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue.
+								<br> <br>
+								Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue.
+								</p>
+							</div>
+							<img src="{% static 'assets/img/prev-arrow.png' %}" alt="arrow" id="prev" class="mob">
+							<img src="{% static 'assets/img/next-arrow.png' %}" alt="" id="next" class="mob">
+						</div><!-- /.team-peoples -->
+						<div class="team-peoples_slider" data-aos="fade-up">
+								<div class="team-directions">
+									<div class="slide">
+										<div class="people-position" data-num="2">
+											<div class="photo"><img src="{% static 'assets/img/people2.png' %}" alt="user photo"></div>
+											<p>Cole Andrews</p>
+											<small>Manager</small>
+										</div><!-- /.people-position -->
+										<div class="people-position" data-num="3">
+											<div class="photo"><img src="{% static 'assets/img/people3.png' %}" alt="user photo"></div>
+											<p>Stanley Wikerson</p>
+											<small>Designer</small>
+										</div><!-- /.people-position -->
+										<div class="people-position" data-num="4">
+											<div class="photo"><img src="{% static 'assets/img/people4.png' %}" alt="user photo"></div>
+											<p>Sue Fitzgerald</p>
+											<small>Photographer</small>
+										</div><!-- /.people-position -->
+										<div class="people-position" data-num="5">
+											<div class="photo"><img src="{% static 'assets/img/people5.png' %}" alt="user photo"></div>
+											<p>Lyda Andrews</p>
+											<small>Assistent</small>
+										</div><!-- /.people-position -->
+									</div>
+									<div class="slide">
+										<div class="people-position" data-num="2">
+											<div class="photo"><img src="{% static 'assets/img/people2.png' %} " alt="user photo"></div>
+											<p>Cole Andrews</p>
+											<small>Manager</small>
+										</div><!-- /.people-position -->
+										<div class="people-position" data-num="3">
+											<div class="photo"><img src="{% static 'assets/img/people3.png' %} " alt="user photo"></div>
+											<p>Stanley Wikerson</p>
+											<small>Designer</small>
+										</div><!-- /.people-position -->
+										<div class="people-position" data-num="4">
+											<div class="photo"><img src="{% static 'assets/img/people4.png' %} " alt="user photo"></div>
+											<p>Sue Fitzgerald</p>
+											<small>Photographer</small>
+										</div><!-- /.people-position -->
+										<div class="people-position" data-num="5">
+											<div class="photo"><img src="{% static 'assets/img/people5.png' %} " alt="user photo"></div>
+											<p>Lyda Andrews</p>
+											<small>Assistent</small>
+										</div><!-- /.people-position -->
+									</div>
+								</div><!-- /.team-directions -->
+							</div><!-- /.team-peoples_slider -->
+					</div><!-- /.col-lg-7 -->
+					<div class="col-lg-5 order-1 order-lg-2">
+						<div class="team-title">
+							<span>We are best</span>
+							<h4>Team.</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue.</p>
+						</div><!-- /.team-title -->
+					</div><!-- /.col-lg-5 -->
+				</div><!-- /.row -->
+			</section>
+			<section class="partners" id="partners">
+				<div class="row">
+					<div class="col-xl-5 col-lg-4">
+						<div class="partners-title">
+							<span>They trust us</span>
+							<h4>Partners.</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+						</div><!-- /.partners-title -->
+					</div><!-- /.col-md-5 -->
+					<div class="col-xl-7 col-lg-8">
+						<div class="partners-images">
+							<img src="{% static 'assets/img/partners.png' %} " alt="partners images">
+							<img src="{% static 'assets/img/partners.png' %}  " alt="partners images">
+							<img src="{% static 'assets/img/partners.png' %} " alt="partners images">
+							<img src="{% static 'assets/img/partners.png' %} " alt="partners images">
+						</div><!-- /.partners-images -->
+						<div class="partners-slider">
+							<div class="slider-blocks">
+								<div class="slide">
+									<img src="{% static 'assets/img/partners.png' %} " alt="partners images">
+									<img src="{% static 'assets/img/partners.png' %} " alt="partners images">
+								</div>
+								<div class="slide">
+									<img src="{% static ' assets/img/partners.png' %}" alt="partners images">
+									<img src="{% static 'assets/img/partners.png' %} " alt="partners images">
+								</div>
+							</div><!-- /.slider-blocks -->
+						</div><!-- /.partners-slider -->
+					</div><!-- /.col-md-7 -->
+				</div><!-- /.row -->
+			</section>
+			<section class="reviews">
+				<div class="row">
+					<div class="col-lg-6 order-2 order-lg-1">
+						<div class="reviews-chat" data-aos="fade-up">
+							<div class="reviews-chat_header">
+								<div class="photo"><img src="{% static 'assets/img/peop-part.png' %} " alt="photo"></div>
+								<p>Partner 1</p>
+								<small>last seen 2 hours ago</small>
+							</div><!-- /.reviews-chat_header -->
+							<div class="company-photo" data-aos="fade-in" data-aos-delay="400"><img src="{% static 'assets/img/peop-part.png' %} " alt="photo"></div>
+							<span>Our company</span>
+							<div class="company-message" data-aos="fade-in" data-aos-delay="400">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum.</p>
+							</div><!-- /.company-message -->
+							<div class="client-message" data-aos="fade-in" data-aos-delay="800">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum.</p>
+							</div><!-- /.client-message -->
+							<div class="client-photo" data-aos="fade-in" data-aos-delay="600"><img src="{% static ' assets/img/peop-part1.png' %}" alt="photo"></div>
+						</div><!-- /.reviews-chat -->
+						<div class="message-wrap" data-aos="fade-up" data-aos-duration="500"></div>
+					</div><!-- /.col-lg-6 -->
+					<div class="col-lg-6 order-1 order-lg-2">
+						<div class="reviews-title">
+							<span>What do they think</span>
+							<h3>Reviews.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar arcu vel nisl dictum interdum. Cras nulla justo, blandit at ligula a, suscipit tincidunt augue. </p>
+						</div><!-- /.reviews-title -->
+					</div><!-- /.col-lg-6 -->
+				</div><!-- /.row -->
+			</section>
+		</div><!-- /.container -->
+		<footer>
+			<img src="{% static 'assets/img/footer-wrapper.png' %} " alt="footer" class="footer-wrapper desctop">
+			<img src="{% static 'assets/img/footer-mob.png' %} " alt="footer" class="footer-wrapper mob">
+			<div class="cube-footer">
+				<img src="{% static 'assets/img/cubs-footer.png' %} " alt="cubs">
+			</div><!-- /.cube-footer -->
+			<div class="container">
+					<div class="footer">
+						<div class="row">
+							<div class="col-xl-5"></div><!-- /.col-md-6 -->
+							<div class="col-xl-7">
+								<div class="footer-search">
+									<h5>Subscribe</h5>
+									<form action="">
+										<input type="text" placeholder="example.com" required>
+										<button></button>
+									</form>
+								</div><!-- /.footer-search -->
+							</div><!-- /.col-md-6 -->
+						</div><!-- /.row -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="footer-nav">
+									<ul>
+										<li><a href="#design">Design</a></li>
+										<li><a href="#pr-dev">Project dev</a></li>
+										<li><a href="#projects">Latest projects </a></li>
+										<li><a href="#features">Features</a></li>
+										<li><a href="#team">Team</a></li>
+										<li><a href="#partners">Partners</a></li>
+									</ul>
+								</div><!-- /.footer-nav -->
+							</div><!-- /.col-md-12 -->
+						</div><!-- /.row -->
+					</div><!-- /.footer -->
+			</div><!-- /.container -->
+		</footer>
+
+
+
+
+		<!-- libreris -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<!-- page scripts -->
+		<script src="{% static 'assets/js/main.js' %} "></script>
+		<!-- Animate -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+    		AOS.init({
+    			duration: 800,
+    		});
+  		</script>
+  		<script src="{% static 'assets/libs/parallax.min.js' %} "></script>
+  		<script src="{% static 'assets/libs/slick/slick.js' %} "></script>
+  		<script>
+  			$('.direction-blocks').slick({
+  				dots: false,
+  				infinite: true,
+  				slidesToShow: 1,
+  				slidesToScroll: 1,
+  				prevArrow: '<img src="{% static 'assets/img/next.svg' %} ">',
+  				nextArrow: '<img src="{% static 'assets/img/next.svg' %} ">',
+  				responsive: [
+  					{
+     					breakpoint: 575,
+      					settings: {
+        				dots: true,
+  						arrows: false,
+      				}
+    			}
+  				]
+ 			});
+ 			$('.team-directions').slick({
+  				dots: true,
+  				arrows: false,
+  				infinite: true,
+  				slidesToShow: 1,
+  				slidesToScroll: 1
+ 			});
+ 			$('.slider-blocks').slick({
+  				dots: true,
+  				arrows: false,
+  				infinite: true,
+  				slidesToShow: 1,
+  				slidesToScroll: 1
+ 			});
+  		</script>
+	</body>
+</html>
